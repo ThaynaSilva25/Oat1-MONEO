@@ -1,8 +1,8 @@
 let movimentacaoEditando = null;
 
-// ===============================
+
 // READ - Buscar movimentações
-// ===============================
+
 
 async function carregarMovimentacoes() {
 
@@ -16,9 +16,9 @@ async function carregarMovimentacoes() {
 }
 
 
-// ===============================
+
 // READ - Mostrar na tela
-// ===============================
+
 
 function mostrarMovimentacoes(movimentacoes) {
 
@@ -100,9 +100,9 @@ function mostrarMovimentacoes(movimentacoes) {
 }
 
 
-// ===============================
+
 // RESUMO FINANCEIRO
-// ===============================
+
 
 function atualizarResumo(movimentacoes) {
 
@@ -132,9 +132,9 @@ function atualizarResumo(movimentacoes) {
 }
 
 
-// ===============================
+
 // FORMATAR MOEDA
-// ===============================
+
 
 function formatarMoeda(valor) {
 
@@ -146,9 +146,9 @@ function formatarMoeda(valor) {
 }
 
 
-// ===============================
+
 // CREATE - Adicionar
-// ===============================
+
 
 document.getElementById("formulario")
     .addEventListener("submit", async function(event) {
@@ -229,9 +229,9 @@ document.getElementById("formulario")
     });
 
 
-// ===============================
+
 // UPDATE - Editar
-// ===============================
+
 
 async function editarMovimentacao(id) {
 
@@ -278,9 +278,9 @@ async function editarMovimentacao(id) {
 }
 
 
-// ===============================
+
 // DELETE - Excluir
-// ===============================
+
 
 async function excluirMovimentacao(id) {
 
@@ -303,9 +303,9 @@ async function excluirMovimentacao(id) {
 }
 
 
-// ===============================
+
 // CANCELAR EDIÇÃO
-// ===============================
+
 
 function cancelarEdicao() {
 
@@ -327,9 +327,9 @@ function cancelarEdicao() {
 }
 
 
-// ===============================
+
 // LIMPAR FORMULÁRIO
-// ===============================
+
 
 function limparFormulario() {
 
