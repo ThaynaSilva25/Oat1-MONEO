@@ -158,18 +158,18 @@ const server = http.createServer((req, res) => {
         return;
     }
 
-    // =========================
+    
     // API - READ
-    // =========================
+    
 
     if (req.method === "GET" && req.url === "/api/movimentacoes") {
         responderJSON(res, 200, listarMovimentacoes());
         return;
     }
 
-    // =========================
+    
     // API - CREATE
-    // =========================
+    
 
     if (req.method === "POST" && req.url === "/api/movimentacoes") {
 
@@ -205,9 +205,9 @@ const server = http.createServer((req, res) => {
         return;
     }
 
-    // =========================
+    
     // API - UPDATE
-    // =========================
+    
 
     if (
         req.method === "PUT" &&
@@ -249,9 +249,9 @@ const server = http.createServer((req, res) => {
         return;
     }
 
-    // =========================
+    
     // API - DELETE
-    // =========================
+    
 
     if (
         req.method === "DELETE" &&
