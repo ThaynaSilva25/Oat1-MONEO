@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moneo - Organizador Financeiro</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            Moneo
+        </div>
+
+        <p>Organizador Financeiro</p>
+    </header>
+
+    <main>
+
+        <section class="resumo">
+
+            <div class="card">
+                <h3>Saldo</h3>
+                <p id="saldo">R$ 0,00</p>
+            </div>
+
+            <div class="card entrada">
+                <h3>Entradas</h3>
+                <p id="entradas">R$ 0,00</p>
+            </div>
+
+            <div class="card saida">
+                <h3>Saídas</h3>
+                <p id="saidas">R$ 0,00</p>
+            </div>
+
+        </section>
+
+        <section class="formulario">
+
+            <h2 id="tituloFormulario">
+                Adicionar movimentação
+            </h2>
+
+            <form id="formulario">
+
+                <input
+                    type="text"
+                    id="descricao"
+                    placeholder="Descrição"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="valor"
+                    placeholder="Valor"
+                    step="0.01"
+                    min="0"
+                    required
+                >
+
+                <select id="tipo" required>
+
+                    <option value="">
+                        Selecione o tipo
+                    </option>
+
+                    <option value="entrada">
+                        Entrada
+                    </option>
+
+                    <option value="saida">
+                        Saída
+                    </option>
+
+                </select>
+
+                <button type="submit" id="botaoSalvar">
+                    Adicionar
+                </button>
+
+                <button
+                    type="button"
+                    id="botaoCancelar"
+                    class="cancelar"
+                    onclick="cancelarEdicao()"
+                    style="display: none;"
+                >
+                    Cancelar
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="lista">
+
+            <h2>
+                Minhas movimentações
+            </h2>
+
+            <div id="listaMovimentacoes"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Moneo — Organizador Financeiro
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
